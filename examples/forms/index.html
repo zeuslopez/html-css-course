@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<!-- device-width -->, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--  form attributes -->
+    <form action="/register" novalidate method="post">
+        <label for="nombre">Nombre</label> 
+        <input id="nombre" name="nombre" placeholder="Pon tu nombre">   
+        <!-- el id es importante en javascript -->
+        <!-- la etiqueta name envia el valor contenido en el network y es util para backend -->
+        <div>
+            <label for="email">email</label>
+            <input type="text" name="email" id="email" placeholder="Pon tu email">
+            <!-- type es importante para indicar el tipo de campo de texto -->
+        </div>
+        <div>
+            <label for="tel">Phone</label>
+            <input type="tel" id="tel">
+        </div>
+        <div>
+            <label for="age">Edad</label>
+            <input type="number" id="age">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password">
+        </div>
+        <div>
+            <!-- <input type="submit" value="enviar"> -->
+            <!-- Ojo hay que definir el type como button en etiquetas button <button type="button">Submit</button> -->
+            <!-- puedo crear un div con rol de boton y que se pueda usar tab a pesar que no haga nada. A veces puedo usarlo como desplegable -->
+            <div role="button" tabindex="0">More info+</div>
+            <input type="submit" value="enviar">
+            
+        </div>
+
+        <hr>
+        <fieldset>
+            <legend>Fav programming lang</legend>
+                <label for="js">javascript</label>
+                <input type="radio" name="wat" id="js">
+                <label for="python">python </label>
+                <input type="radio" name="wat" id="python">
+                <label for="net">.NET</label>
+                <input type="radio" name="wat" id="net">
+        </fieldset>
+                <!-- les pongo el mismo name (wet) para agruparlos y solo  se pueda seleccionar uno -->
+                <!-- ojo con los ids porque deben ser unicos, no se pueden repetir -->
+        <fieldset>
+                <legend>Fav programming lang</legend>                
+                <label for="js">javascript</label>
+                <input type="checkbox" name="wat" id="js">
+                <label for="python">python </label>
+                <input type="checkbox" name="wat" id="python">
+                <label for="net">.NET</label>
+                <input type="checkbox" name="wat" id="net">
+        </fieldset>   
+        
+
+
+
+        <hr>
+
+    </form>
+
+    <!--  input + label -->
+
+    <!--  validation -->
+
+</body>
+</html>
