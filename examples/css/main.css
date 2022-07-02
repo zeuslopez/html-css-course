@@ -51,3 +51,15 @@ section header h4 {
 .item, .button {
    text-transform: uppercase; 
 }
+
+/* input que tengan al lado un elemento con la clase label EL QUE ESTE INMEDIATO DESPUES.en cambio  input 2 y 3 no hace nada input y label sueen ir juntos*/
+.label + input {
+    border-color: #000fff
+
+}
+
+/*  te hace el cambio en los inputs que esten en el mismo nivel(dentro delinea de tabulacion)Se usa poco
+.label ~ input {
+    border-color: red;
+}
+ */
