@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            h2 {
+                color: blue;
+            }
+            /* 1. cascada. Se queda lo ultimo (red) */
+            h2 {
+                color:red;
+            }
+            /* 2. selectores */
+
+
+            /* 3. specificity */
+
+        </style>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <h1 style="color: red">title 1 CSS in line</h1> 
+        <!-- CSS en linea problema de que se hace inmenso e ilegible.Aunque ponga otros manda el estilo en linea -->
+        <h2>Title 2 cc head tag</h2>
+        <!-- no es aconsejable si va a generar muchas lineas o se mezcla con mucho html -->
+        <h3>Title 3 css external file</h3>
+        <!-- La mas comoda pero pide mas recursos al servidor porque pide html y luego css -->
+
+        <div>
+            <header>
+                <h2>Segundo h2</h2>
+            </header>
+        </div>
+        <h2 id="mititulo">Title with id</h2>
+        <h2 class="title2">Title with class</h2>
+            <section>
+                <header>
+                    <h4>Title</h4>
+                </header>
+            </section>
+
+            <section class="content">
+                <header>
+                    <h4>Title 2</h4>
+                </header>
+            </section>
+
+            <ul class="list">
+                <li>
+                    Item 1
+                    <ul>
+                        <li>Sublist item 1</li>
+                        <li>Sublist item 2</li>
+                    </ul>
+                </li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+            <div class="item">
+                hola
+            </div>
+            <button class="button">submit</button>
+            
+    </body>
+</html>

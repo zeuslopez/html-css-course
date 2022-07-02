@@ -1,0 +1,53 @@
+h3 {
+    color: green;
+}
+
+h2 {
+    color: purple;
+}
+
+#mititulo {
+    color: black;
+}
+
+.title2 {
+    color: rgba(90, 90, 9, 0.938);
+}
+
+
+/* estoy seleccionando los h4 que estan dentro de una seccion */
+section h4 {
+    font-style: italic;
+}
+
+/* estoy seleccionando los h4 que estan dentro de una seccion y a su vez dentro de un header*/
+section header h4 {
+    font-style: italic;
+}
+
+/* busca un elemento h4 que esta dentro de algo que tiene la clase content. este gana al anterior porque  es 0.1.1 en vez de 0.0.3*/
+.content h4 {
+    font-style: normal;
+
+}
+
+/* selectores */
+/* todo elemento  que tenga clase list y tenga li dentro cambia todos los li a italic*/
+
+.list li{
+    font-style: italic;
+}
+
+/* con el simbolo > solo cambia inmediatamente despues de li
+
+.list > li{
+    font-style: italic;
+}   
+
+*/
+
+/* puedo anidar varios poniendo , para aplicarles el mismo estilo */
+
+.item, .button {
+   text-transform: uppercase; 
+}
