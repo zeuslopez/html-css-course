@@ -1,8 +1,17 @@
+:root {
+    /* definicion de la variable */
+    --main-primary-color: #110ddf;
+    --secondary-font-color: #fff;
+    font-size: 16px;
+}
 
+
+
+body {
+    font-size: 16px;
+}
 
 .footer {
-    background-color: #4c4ae6;
-    color: #fff;
     font-style: italic;
     text-align: center;
 
@@ -22,6 +31,41 @@
 
     /* 3. padding */
     padding: 20px;
-    font-size: 16px;
+    font-size: 1rem;
+    /* 1 ->16px */
+}
 
+.absolute-font {
+    font-size: 16px;
+    padding: 16px;
+
+} 
+
+/*  .navbar .image-container {
+    display: none; /* oculata la imagen 
+}*/
+
+.hide {
+    display: none;
+}
+
+/* classe gnerica que puedo usar en cualquier parte */
+.main-bg {
+    background-color: var(--main-primary-color);
+    color: var(--secondary-font-color);
+}
+
+/* navbar */
+.navbar {
+padding: 10px 20px;
+position: fixed;
+top: 0;
+right: 0;
+left: 0;
+}
+
+/* link */
+.navbar .app-title {
+    color: var(--secondary-font-color);
+    text-decoration: none;
 }
