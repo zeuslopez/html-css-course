@@ -1,0 +1,148 @@
+:root {
+  /* definición variable */
+  --main-primary-color: #4C4AE6;
+  --secondary-font-color: #fff;
+  font-size: 16px;
+}
+body {
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+}
+.footer {
+  padding-top: 10px;
+  text-align: center;
+  font-style: italic;
+  /* 1. margin */
+  /* margin-top: 20px;
+  margin-left: 20px;20px;
+  margin-right: 
+  margin-bottom: 20px; */
+  /* T - R - B - L */
+  /* margin: 10px 30px 25px 60px; */
+  /* Y - X */
+  /* margin: 10px 30px; */
+  /* Todos */
+  /* margin: 10px; */
+  /* margin: 10px 30px 25px; */
+  /* 2. border */
+  /* border: 2px solid red; */
+  /* border-radius: 50%; */
+  /* 3. padding */
+  padding: 1rem;
+  font-size: 1rem;
+  /* 1em -> 16px */
+  /* 1rem -> 16px */
+}
+
+.absolute-font {
+  padding: 16px;
+  font-size: 16px;
+}
+
+.hide {
+  display: none;
+}
+
+.main-bg {
+  background-color: var(--main-primary-color);
+  color: var(--secondary-font-color);
+}
+
+
+
+/* -- add your main tag css */
+.main-content {
+  width: 90%;
+  margin: 0 auto;
+}
+/* --- add your nav tag css --- */
+.navbar {
+  padding: 10px 20px;
+  /* position: fixed; */
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .image-container {
+  width: 50px;
+}
+
+.navbar .image-container img {
+  width: 100%;
+}
+
+.navbar .app-title {
+  color: var(--secondary-font-color);
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+/* --- add your form css */
+
+.search-label {
+  margin: 5px
+}
+
+
+
+.intext {
+  height: 100%;
+  border-radius: 5%;
+  border: 2px solid rgba(0, 0, 0, 0.2)
+  
+}
+
+/* title */
+
+
+
+.search-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+}
+
+.search-form h1 {
+  margin-bottom: 12px;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+.form-group input {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.button {
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  margin: 5px;
+}
+
+/* media query */
+
+@media print {
+  body {
+      color: red;   /* cambia las letras rojas al imprimir */
+  }
+}
+
+/* APLICA LO MSMO QUE VIMOS EN IMAGENES RESPONSIVE QUE VAN CAMBIANDO EN FUNCION DEL ANCHO */
+@media screen and (max-width: 400px) {           /* a partir de 400px esto se ejecuta */
+ .navbar .image-container img {
+  display: none;
+ }
+}

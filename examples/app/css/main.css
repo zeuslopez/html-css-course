@@ -9,6 +9,7 @@
 
 body {
     font-size: 16px;
+    font-family: 'Raleway', sans-serif;
 }
 
 .footer {
@@ -68,4 +69,17 @@ left: 0;
 .navbar .app-title {
     color: var(--secondary-font-color);
     text-decoration: none;
+}
+
+@media print {
+    body {
+        color: red;   /* cambia las letras rojas al imprimir */
+    }
+}
+
+/* APLICA LO MSMO QUE VIMOS EN IMAGENES RESPONSIVE QUE VAN CAMBIANDO EN FUNCION DEL ANCHO */
+@media screen and (max-width: 400px) {           /* a partir de 400px esto se ejecuta */
+   .navbar .image-container img {
+    display: none;
+   }
 }
