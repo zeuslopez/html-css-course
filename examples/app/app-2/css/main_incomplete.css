@@ -3,10 +3,11 @@
   --main-primary-color: #4C4AE6;
   --secondary-font-color: #fff;
   font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+
 }
 body {
   font-size: 16px;
-  font-family: 'Raleway', sans-serif;
 }
 .footer {
   padding-top: 10px;
@@ -49,12 +50,6 @@ body {
 }
 
 
-
-/* -- add your main tag css */
-.main-content {
-  width: 90%;
-  margin: 0 auto;
-}
 /* --- add your nav tag css --- */
 .navbar {
   padding: 10px 20px;
@@ -141,8 +136,88 @@ body {
 }
 
 /* APLICA LO MSMO QUE VIMOS EN IMAGENES RESPONSIVE QUE VAN CAMBIANDO EN FUNCION DEL ANCHO */
-@media screen and (max-width: 400px) {           /* a partir de 400px esto se ejecuta */
- .navbar .image-container img {
+/* @media screen and (max-width: 400px) {            a partir de 400px esto se ejecuta 
+ .navbar .image-container img {               esta media query no seria mobile firt 
   display: none;
  }
+} */
+
+
+/* Haremos siepre de mobile first */
+.navbar .image-container {              
+  display: none;
+}
+
+.navbar {
+  justify-content: flex-end;
+}
+
+.search-form {
+  max-width: 600px;
+}
+
+.main-content {
+  width: 90%;        /* aplica 90% de pantalla desde la izquiera hasta que llege a 1200px */
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+
+
+.carousel-links {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-dot {
+  background-color: black;
+  width: 16px;
+  height: 16px;
+  display: block;    /* IMPORTANTE para que se vea como un bloque y no texto */
+  border-radius: 50%;  /* circulitos del slider */
+  margin: 5px;
+
+}
+
+.carousel-slides > div {
+  width: 100%;
+  background-color: rgb(36, 35, 35);
+  color: var(--secondary-font-color);
+  height: 100%;
+  display: flex;
+  justify-content: center; 
+  align-items: center; /* textos centrados */
+}
+
+.carousel-slides {
+  width: 100vw;
+  height: 30vh;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;  /* lo paso a visualizacion en columna */
+  flex-wrap: wrap;  /* al hacerlo warp lo comprime mostrando solo uno de ellos */
+}
+
+@media screen and (min-width: 768px) {
+  .navbar .image-container {
+  display: block;
+  }
+
+  .navbar {
+  justify-content: space-between;
+  }  
+
+ .content {
+  display: flex;
+  justify-content:space-between
+  }
+
+  .sidebar {
+  width: 25%;
+  }
+
+  .anime {
+  width: 70%;
+  }
 }
